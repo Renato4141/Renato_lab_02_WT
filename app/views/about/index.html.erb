@@ -1,0 +1,82 @@
+<div class="container mt-5">
+
+  <!-- I. Información personal -->
+  <section class="personal-info mb-5">
+    <h1 class="mb-3">I. Bienvenido a mi página personal</h1>
+    <p><strong>Name:</strong> Renato Ilzauspe</p>
+    <p><strong>Major:</strong> Computer Engineering</p>
+    <p><strong>University:</strong> University of Los Andes</p>
+    <p><strong>Year of University Enrollment:</strong> 2022</p>
+    <p><strong>Github Profile:</strong> 
+      <a href="https://github.com/renato4141" target="_blank">Github Profile</a>
+    </p>
+    <p><strong>Personal summary:</strong> I study Computer Engineering at the University of Los Andes, and as an allegedly functional human being, I have my interests</p>
+  </section>
+
+  <!-- II. Imagen de perfil -->
+  <section class="image-section text-center mb-5">
+    <h1>II. Profile Picture</h1>
+    <img src="https://avatars.githubusercontent.com/u/178671541?s=400&u=ce3011fd89efcba4dd788bbdccd5dff96efa2c8f&v=4" 
+         class="rounded-circle border border-dark mt-3" width="200" alt="Profile Image">
+  </section>
+
+  <!-- III. Hobbies -->
+  <section class="hobbies mb-5">
+    <h2>III. A little about me</h2>
+    <p>Hello, My name is Renato Ilzauspe, I'm a Computer Engineering student at the University of Los Andes.</p>
+    <p>I used to participate in rugby and shotput competitions and some competitive gaming.</p>
+
+    <h2>Hobbies</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Playing video games</li>
+      <li class="list-group-item">Fishing</li>
+      <li class="list-group-item">Cooking</li>
+      <li class="list-group-item">The Gym</li>
+    </ul>
+  </section>
+
+  <!-- IV. Skills -->
+  <section class="skills mb-5">
+    <h2>IV. Personal Skills</h2>
+    <table class="table table-striped table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Python</td><td>Advanced</td></tr>
+        <tr><td>Excel</td><td>Intermediate</td></tr>
+        <tr><td>HTML</td><td>Basic</td></tr>
+        <tr><td>Procrastination</td><td>Mastered</td></tr>
+        <tr><td>Cooking</td><td>Intermediate</td></tr>
+        <tr><td>CSS</td><td>Beginner</td></tr>
+        <tr><td>Portuguese</td><td>Basic</td></tr>
+        <tr><td>English</td><td>Advanced</td></tr>
+        <tr><td>Spanish</td><td>Native</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- V. Parte interactiva -->
+  <section class="interactive mb-5">
+    <h2>V. Interactive Part</h2>
+    <p>Write something and that something will be returned :O :</p>
+
+    <input type="text" id="Input" placeholder="Type here" class="form-control mb-2 w-50">
+    <button onclick="Text()" class="btn btn-dark mb-3">Repeat</button>
+
+    <p class="result">
+      <span id="output">Write something and I will repeat after you</span>
+    </p>
+  </section>
+
+</div>
+
+<script>
+function Text() {
+  var i = document.getElementById("Input").value;
+  document.getElementById("output").innerText = i;
+}
+</script>
